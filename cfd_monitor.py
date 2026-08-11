@@ -22,7 +22,3 @@ class Room:
 
     def to_fahrenheit(self):
         return (self.temp * 9 / 5) + 32
-
-
-# server = Room("server", 34, 910)
-# print(f"{server}\n{server.check_humidity()}")
