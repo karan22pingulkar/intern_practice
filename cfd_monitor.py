@@ -8,7 +8,9 @@ class Room:
         self.temp = new_temp
 
     def __str__(self):
-        return f"Room: {self.name}, Temp: {self.temp}°C, Humidity: {self.humidity}%"
+        return (
+            f"Room name: {self.name}, Temp: {self.temp}°C, Humidity: {self.humidity}%"
+        )
 
     def check_humidity(self):
         if self.humidity > 90:
@@ -18,6 +20,9 @@ class Room:
 
         return message
 
+    def to_fahrenheit(self):
+        return (self.temp * 9 / 5) + 32
 
-# server = Room("server_room", 24, 90)
-# print(server)
+
+# server = Room("server", 34, 910)
+# print(f"{server}\n{server.check_humidity()}")
