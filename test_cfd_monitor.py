@@ -1,7 +1,7 @@
 from cfd_monitor import Room
 
 
-# update temp test function
+# updates temp test function
 def test_update_temp():
     test_room = Room("testroom", 28, 40)
     test_room.update_temp(30)
