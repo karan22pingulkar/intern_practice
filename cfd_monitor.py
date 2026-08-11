@@ -19,5 +19,5 @@ class Room:
         return message
 
 
-server = Room("server_room", 24, 90)
+# server = Room("server_room", 24, 90)
 # print(server)
