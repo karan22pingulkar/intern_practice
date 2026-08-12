@@ -22,3 +22,7 @@ class Room:
 
     def to_fahrenheit(self):
         return (self.temp * 9 / 5) + 32
+
+
+check = Room("hall", 34, 90)
+print(check)
