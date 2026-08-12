@@ -16,7 +16,8 @@ def test_fahrenheit():
     assert new_room.to_fahrenheit() == 82.4
 
 
-@pytest.mark.parametrize(
+# made single function for checking humidity levels irrespective of how many object we create it checks temp and give the message
+@pytest.mark.parametrize(  # used decorator to change behaviour of tes chcek humidity test method which asks twwo parameters
     "humidity, expected_msg",
     [
         (24, "Humidity levels are normal"),
