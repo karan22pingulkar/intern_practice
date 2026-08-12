@@ -19,7 +19,7 @@ class Room:
         if self.humidity > 90:
             message = "Warning: Environment is too humid!"
         else:
-            message = "Humidity levels are normal."
+            message = "Humidity levels are normal"
 
         return message
 
