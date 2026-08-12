@@ -4,6 +4,9 @@ class Room:
         self.temp = temp
         self.humidity = humidity
 
+        if humidity < 0 or humidity > 100:
+            raise ValueError("Humidity must be between 0 and 100")
+
     def update_temp(self, new_temp):
         self.temp = new_temp
 

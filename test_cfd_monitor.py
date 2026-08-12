@@ -21,3 +21,8 @@ def test_fahrenheit():
     new_room.to_fahrenheit()
     # 28 C is 82.4 in Fahrenheit
     assert new_room.to_fahrenheit() == 82.4
+
+
+def test_check_humidity_normal():
+    new = Room("new", 23, 24)
+    assert new.check_humidity() == 24
