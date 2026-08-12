@@ -19,11 +19,10 @@ def test_fahrenheit():
 @pytest.mark.parametrize(
     "humidity, expected_msg",
     [
-        (24, "Humidity levels are normal."),
+        (24, "Humidity levels are normal"),
         (100, "Warning: Environment is too humid!"),
     ],
 )
 def test_check_humidity(humidity, expected_msg):
     new = Room("new", 24, humidity)
-
     assert new.check_humidity() == expected_msg
